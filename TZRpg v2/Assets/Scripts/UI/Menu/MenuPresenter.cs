@@ -50,6 +50,7 @@ namespace UI.Menu
 
         private void PlayClicked()
         {
+            // Ideally, this would be a separate responsibility with its own implementation. For the project, I decided to leave it that way.
             SceneManager.LoadScene(SceneNames.Game);
         }
 
@@ -71,6 +72,7 @@ namespace UI.Menu
 
         private void Save()
         {
+            // Ideally, this would be a separate responsibility with its own implementation. For the project, I decided to leave it that way.
             PlayerPrefs.SetInt(DataBaseConstants.CharacterKey, (int)_currentView.Type);
         }
     }
